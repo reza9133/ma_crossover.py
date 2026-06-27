@@ -35,3 +35,4 @@ for price in market_data:
         bot.analyze_market()
 def check_risk_management(self, current_price):
         if self.current_position != 'BUY': return
+price_change = (current_price - self.entry_price) / self.entry_price
