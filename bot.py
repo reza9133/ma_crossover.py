@@ -4,3 +4,4 @@ self.short_window = 5
         self.long_window = 20
 self.prices = []
 self.current_position = None
+self.balance = 1000
