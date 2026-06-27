@@ -27,3 +27,4 @@ elif short_sma < long_sma and self.current_position == 'BUY':
             self.current_position = None
 if __name__ == "__main__":
     bot = AdvancedTradingBot()
+market_data = [40, 42, 45, 43, 46, 50, 52, 55, 51, 48, 45, 42, 40]
