@@ -32,3 +32,5 @@ market_data = [40, 42, 45, 43, 46, 50, 52, 55, 51, 48, 45, 42, 40]
 for price in market_data:
         bot.add_price(price)
         bot.analyze_market()
+def check_risk_management(self, current_price):
+        if self.current_position != 'BUY': return
