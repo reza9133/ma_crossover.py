@@ -1,3 +1,4 @@
+import time
 class AdvancedTradingBot:
 def __init__(self):
 self.short_window = 5
