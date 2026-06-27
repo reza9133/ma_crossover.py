@@ -46,6 +46,7 @@ if price_change >= self.take_profit_pct:
             self.current_position = None
 elif price_change <= -self.stop_loss_pct:
             print(f"🛡️ STOP LOSS HIT! Closed at {current_price}")
+self.log_trade(current_price, "Stop Loss")
             self.current_position = None
 def log_trade(self, exit_price, reason):
         self.total_trades += 1
