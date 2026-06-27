@@ -17,3 +17,5 @@ return sum(self.prices[-window:]) / window
 def analyze_market(self):
         short_sma = self.get_sma(self.short_window)
         long_sma = self.get_sma(self.long_window)
+if not short_sma or not long_sma:
+            return
