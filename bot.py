@@ -38,3 +38,5 @@ def check_risk_management(self, current_price):
 price_change = (current_price - self.entry_price) / self.entry_price
 if price_change >= self.take_profit_pct:
             pass
+elif price_change <= -self.stop_loss_pct:
+            pass
