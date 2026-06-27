@@ -20,6 +20,7 @@ def analyze_market(self):
         long_sma = self.get_sma(self.long_window)
 if not short_sma or not long_sma:
             return
+        self.check_risk_management(self.prices[-1])
 if short_sma > long_sma and self.current_position != 'BUY':
         self.entry_price = short_sma
             print(f"BUY Signal! SMA: {short_sma}")
