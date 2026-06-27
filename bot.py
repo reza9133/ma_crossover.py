@@ -57,6 +57,7 @@ trade_pnl = ((exit_price - self.entry_price) / self.entry_price) * self.balance
 self.balance += trade_pnl
 if trade_pnl > 0:
             self.win_trades += 1
+        self.trade_history.append({"price": exit_price, "reason": reason})
 def print_summary(self):
         win_rate = (self.win_trades / self.total_trades) * 100 if self.total_trades > 0 else 0
         print(f"\n📊 --- FINAL REPORT ---")
