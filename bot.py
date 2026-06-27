@@ -66,3 +66,5 @@ def print_summary(self):
 bot.print_summary()
 def export_history(self):
         filename = "trades.txt"
+with open(filename, "w") as f:
+            f.write("--- Trade History ---\n")
