@@ -12,6 +12,7 @@ self.entry_price = 0
 self.total_trades = 0
         self.win_trades = 0
 self.total_pnl = 0
+self.trade_history = []
 def add_price(self, price):
 self.prices.append(price)
 if len(self.prices) > self.long_window + 5:
