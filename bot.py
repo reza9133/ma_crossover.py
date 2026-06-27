@@ -55,3 +55,8 @@ trade_pnl = ((exit_price - self.entry_price) / self.entry_price) * self.balance
 self.balance += trade_pnl
 if trade_pnl > 0:
             self.win_trades += 1
+def print_summary(self):
+        win_rate = (self.win_trades / self.total_trades) * 100 if self.total_trades > 0 else 0
+        print(f"\n📊 --- FINAL REPORT ---")
+        print(f"Total Trades: {self.total_trades} | Win Rate: {win_rate:.1f}%")
+        print(f"Final Balance: ${self.balance:.2f} | Net Profit/Loss: ${self.total_pnl:.2f}")
