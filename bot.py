@@ -68,3 +68,5 @@ def export_history(self):
         filename = "trades.txt"
 with open(filename, "w") as f:
             f.write("--- Trade History ---\n")
+        for trade in self.trade_history:
+                f.write(f"Reason: {trade['reason']} at Price: {trade['price']}\n")
