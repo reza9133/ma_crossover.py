@@ -50,3 +50,4 @@ def log_trade(self, exit_price, reason):
         self.total_trades += 1
 trade_pnl = ((exit_price - self.entry_price) / self.entry_price) * self.balance
         self.total_pnl += trade_pnl
+self.balance += trade_pnl
