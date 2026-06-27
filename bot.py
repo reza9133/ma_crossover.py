@@ -36,3 +36,5 @@ for price in market_data:
 def check_risk_management(self, current_price):
         if self.current_position != 'BUY': return
 price_change = (current_price - self.entry_price) / self.entry_price
+if price_change >= self.take_profit_pct:
+            pass
