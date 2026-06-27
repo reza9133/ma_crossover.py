@@ -21,6 +21,7 @@ def analyze_market(self):
 if not short_sma or not long_sma:
             return
 if short_sma > long_sma and self.current_position != 'BUY':
+        self.entry_price = short_sma
             print(f"BUY Signal! SMA: {short_sma}")
             self.current_position = 'BUY'
 elif short_sma < long_sma and self.current_position == 'BUY':
