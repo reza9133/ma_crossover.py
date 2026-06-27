@@ -25,3 +25,5 @@ if short_sma > long_sma and self.current_position != 'BUY':
 elif short_sma < long_sma and self.current_position == 'BUY':
             print(f"SELL Signal! SMA: {short_sma}")
             self.current_position = None
+if __name__ == "__main__":
+    bot = AdvancedTradingBot()
