@@ -5,3 +5,4 @@ self.short_window = 5
 self.prices = []
 self.current_position = None
 self.balance = 1000
+self.take_profit_pct = 0.05
