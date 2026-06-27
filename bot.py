@@ -14,3 +14,6 @@ if len(self.prices) > self.long_window + 5:
 def get_sma(self, window):
         if len(self.prices) < window: return None
 return sum(self.prices[-window:]) / window
+def analyze_market(self):
+        short_sma = self.get_sma(self.short_window)
+        long_sma = self.get_sma(self.long_window)
