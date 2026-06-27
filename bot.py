@@ -10,6 +10,7 @@ self.stop_loss_pct = 0.02
 self.entry_price = 0
 self.total_trades = 0
         self.win_trades = 0
+self.total_pnl = 0
 def add_price(self, price):
 self.prices.append(price)
 if len(self.prices) > self.long_window + 5:
