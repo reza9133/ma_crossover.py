@@ -1,5 +1,6 @@
 import time
 class AdvancedTradingBot:
+"""A professional bot with MA crossover and risk management."""        
 def __init__(self):
 self.short_window = 5
         self.long_window = 20
