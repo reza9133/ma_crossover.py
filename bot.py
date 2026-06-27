@@ -40,4 +40,5 @@ if price_change >= self.take_profit_pct:
             print(f"💰 TAKE PROFIT HIT! Closed at {current_price}")
             self.current_position = None
 elif price_change <= -self.stop_loss_pct:
-            pass
+            print(f"🛡️ STOP LOSS HIT! Closed at {current_price}")
+            self.current_position = None
