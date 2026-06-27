@@ -73,3 +73,4 @@ with open(filename, "w") as f:
         for trade in self.trade_history:
                 f.write(f"Reason: {trade['reason']} at Price: {trade['price']}\n")
 print(f"\n📁 Trade history saved to {filename}")
+print("✅ Simulation completed successfully!")
