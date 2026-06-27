@@ -60,3 +60,4 @@ def print_summary(self):
         print(f"\n📊 --- FINAL REPORT ---")
         print(f"Total Trades: {self.total_trades} | Win Rate: {win_rate:.1f}%")
         print(f"Final Balance: ${self.balance:.2f} | Net Profit/Loss: ${self.total_pnl:.2f}")
+bot.print_summary()
