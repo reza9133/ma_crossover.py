@@ -42,6 +42,7 @@ def check_risk_management(self, current_price):
 price_change = (current_price - self.entry_price) / self.entry_price
 if price_change >= self.take_profit_pct:
             print(f"💰 TAKE PROFIT HIT! Closed at {current_price}")
+        self.log_trade(current_price, "Take Profit")
             self.current_position = None
 elif price_change <= -self.stop_loss_pct:
             print(f"🛡️ STOP LOSS HIT! Closed at {current_price}")
