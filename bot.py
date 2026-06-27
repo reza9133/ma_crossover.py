@@ -11,3 +11,5 @@ def add_price(self, price):
 self.prices.append(price)
 if len(self.prices) > self.long_window + 5:
             self.prices.pop(0)
+def get_sma(self, window):
+        if len(self.prices) < window: return None
